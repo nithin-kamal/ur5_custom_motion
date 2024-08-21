@@ -39,6 +39,8 @@
         <arg name="rviz_config" value="$(find ur_custom_moveit_config)/launch/moveit.rviz" />
     </include>
 
+    <node name="sine_publisher" pkg="ur_custom_motion" type="sine_publisher.py" />
+
     <node name="motion_generator" pkg="ur_custom_motion" type="custom_motion_generator.py" />
 
 </launch>
